@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
 var cors = require("cors");
 
-dotenv.config({ path: "./config.env" });
+// dotenv.config({ path: "./config.env" });
 require("./db/connection");
 // const PORT1 = config.env.PORT1;
 const PORT = process.env.PORT
