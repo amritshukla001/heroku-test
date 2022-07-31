@@ -6,7 +6,8 @@ var cors = require("cors");
 
 dotenv.config({ path: "./config.env" });
 require("./db/connection");
-const PORT = process.env.PORT;
+const PORT1 = process.env.PORT;
+const PORT = config.env.port
 
 const app = express();
 app.use(cors());
@@ -16,6 +17,6 @@ app.use(bodyParser.json());
 app.set("view engine", "ejs");
 app.use(require("./apiCall"));
 
-app.listen(PORT, () => {
-  console.log(`Server is running at PORT ${PORT}`);
+app.listen(PORT1, () => {
+  console.log(`Server is running at PORT ${PORT1}`);
 });
