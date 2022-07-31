@@ -37,6 +37,10 @@ router.get("/", (req, res) => {
   res.send("Hello World from the server router.js");
 });
 
+router.get("/test", (req, res) => {
+  res.send("Testing....");
+});
+
 router.post("/register", register.register);
 router.post("/login", login.login);
 
